@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Gloria+Hallelujah&display=swap');
+
 :root {
     --azul-escuro: #030637;
     --preto: #000000;
@@ -7,6 +9,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Cousine", monospace;
+    font-size: 18px;
+
 }
 
 html, body {
@@ -27,10 +32,6 @@ html, body {
     min-height: 100vh;
 }
 
-header {
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(3,6,55,1) 100%);
-    height: 100vh;
-}
 
 section {
     height: 100vh;
@@ -41,7 +42,7 @@ section {
 
 /* Efeito de céu estrelado */
 
-.estrelas {
+.stars {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -61,5 +62,65 @@ section {
     100%{
         transform: scale(1.2);
     }
+}
+
+
+/* Header */
+
+header {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(3,6,55,1) 100%);
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+
+#name {
+    position: absolute;
+    bottom: 0;
+    margin: 45px;
+}
+
+h1 {
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    display: flex;
+    justify-content: end;
+}
+
+.nav * {
+    transition: all .35s ease;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 25px 45px;
+}
+
+nav ul li {
+    font-size: 1.5em;
+    margin-left: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+nav a:hover{
+    border-bottom: 1px solid #fff;
 }
 
