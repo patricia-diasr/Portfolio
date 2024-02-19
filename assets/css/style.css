@@ -18,6 +18,10 @@ html, body {
     height: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #sparkles {
     width: 100%;
     height: 100vh;
@@ -34,7 +38,7 @@ html, body {
 
 
 section {
-    height: 100vh;
+    min-height: 100vh;
     position:relative;
     z-index: 2;
     padding: 45px;
@@ -170,10 +174,71 @@ h3 {
 }
 
 p {
-    text-align: justify;
+    text-align: start;
     text-indent: 2em;
     font-size: 1.3em;
     margin-bottom: 10px;
 }
 
 
+/* Technologies */
+
+#technologies {
+    background: rgb(2, 3, 11);
+    color: #fff;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.item {
+    width: 180px;
+    height: 180px;
+    padding: 35px;
+    border-radius: 30px;
+    background: #fff;
+    margin-bottom: 20px;
+
+}
+
+.item:nth-child(n+1){
+    margin-right: 20px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.item:hover .card {
+    transform: rotateY(180deg);
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.front {
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.tech-name {
+    font-size: 24px;
+    color: black;
+}
