@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Quicksand:wght@300..700&display=swap');
 
 :root {
     --azul-escuro: #030637;
@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Cousine", monospace;
+    font-family: "Quicksand", sans-serif;
     font-size: 18px;
 
 }
@@ -82,8 +82,7 @@ nav {
     display: flex;
     justify-content: end;
     width: 100%;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(17,17,17,.3) 0%, rgba(17,17,17,1) 100%);
+    background: rgba(0,0,0, 0.4);
 }
 .nav * {
     transition: all .35s ease;
@@ -251,6 +250,130 @@ p {
 .tech-name {
     font-size: 24px;
     color: black;
+}
+
+/* Projects */
+
+#projects {
+    background: var(--azul-escuro);
+}
+
+#projects h3 {
+    color: #fff;
+    width: 900px;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.slideshow-container {
+    width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.project {
+    background: #fff;
+    border-radius: 40px;
+    width: calc(100% - 80px);
+    height: 80vh;
+    margin: auto;
+    display: flex;
+}
+
+.project-image {
+    border-radius: 40px 0 0 40px;
+    width: 50%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.project-image:nth-child(1) {
+    background: url('../images/prudente-casa-pet.png');
+}
+
+.project-info {
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.project p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.project strong {
+    font-size: 1.0em;
+}
+
+.project a {
+    position: absolute;
+    bottom: 0;
+    background-color: #e01abc;
+    padding: 12px 30px;
+    border-radius: 25px;
+    background: #e01abc;
+    margin-bottom: 45px;
+    color: #fff;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 25px;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
 }
 
 
