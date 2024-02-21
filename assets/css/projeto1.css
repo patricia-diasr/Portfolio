@@ -151,11 +151,71 @@ h2 {
 
 /* About */
 
+header {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(3,6,55,1) 100%);
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+
+#title-name {
+    position: absolute;
+    bottom: 0;
+    margin: 45px;
+}
+
+h1 {
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+
+/* About */
+
 #about {
     background-color: var(--azul-escuro);
     display: flex;
     flex-wrap: wrap;
     color: #fff;
+}
+
+.col-1 {
+    width: 35%;
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square-container {
+    width: 100%;
+    position: relative;
+    padding-bottom: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#profile {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border-left: 0.6em solid white;
+    border-bottom: 0.6em solid white;
+    border-right: 0.6em dotted white;
+    border-top: 0.6em dotted white;
+}
+
+.col-2 {
+    width: 65%;
+    display: flex;
+    align-items: center;
 }
 
 h3 {
@@ -164,14 +224,20 @@ h3 {
     margin-bottom: 20px;
 }
 
-.col-1 {
-    width: 35%;
+.icones {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.col-2 {
-    width: 65%;
-    display: flex;
-    align-items: center;
+.icone {
+    margin: 0 30px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.icone:hover {
+    filter: drop-shadow(0 0 10px white);
 }
 
 p {
@@ -182,15 +248,21 @@ p {
 }
 
 
+
 /* Gallery */
 
 #gallery {
     display: flex;
     justify-content: space-between;
-    background-color: #030637;
+    align-items: center;
+    background: rgb(2, 3, 11);
+    z-index: 1;
 }
 
-
+#projects h3 {
+    color: #fff;
+    width: 100%;
+}
 
 #main-video {
     width: calc(50vw - 90px);

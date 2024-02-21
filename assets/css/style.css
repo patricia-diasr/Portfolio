@@ -178,13 +178,11 @@ h2 {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border-left: 0.8em solid white;
-    border-bottom: 0.8em solid white;
-    border-right: 0.8em dotted white;
-    border-top: 0.8em dotted white;
+    border-left: 0.6em solid white;
+    border-bottom: 0.6em solid white;
+    border-right: 0.6em dotted white;
+    border-top: 0.6em dotted white;
 }
-
-
 
 .col-2 {
     width: 65%;
