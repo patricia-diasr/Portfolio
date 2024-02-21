@@ -11,7 +11,6 @@
     box-sizing: border-box;
     font-family: "Quicksand", sans-serif;
     font-size: 18px;
-
 }
 
 html, body {
@@ -35,10 +34,9 @@ main {
     width: 100%;
 }
 
-
 section {
     min-height: 100vh;
-    position:relative;
+    position: relative;
     z-index: 2;
     padding: 45px;
 }
@@ -81,9 +79,10 @@ nav {
     z-index: 4;
     display: flex;
     justify-content: end;
-    width: 100%;
-    background: rgba(0,0,0, 0.4);
+    width: 100vw;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(3,6,55,1) 100%);
 }
+
 .nav * {
     transition: all .35s ease;
 }
@@ -95,17 +94,31 @@ nav ul {
 }
 
 nav ul li {
-    font-size: 1.5em;
     margin-left: 30px;
 }
 
 nav a {
+    font-size: 1.3em;
     color: #fff;
     padding: 10px;
+    margin-left: 30px;
+
 }
 
 nav a:hover{
     border-bottom: 1px solid #fff;
+}
+
+nav svg {
+    color: #fff;
+    width: 2.2em;
+    margin: 25px 45px;
+    display: none;
+}
+
+
+#close-menu{
+    width: 2.4em;        
 }
 
 /* Header */
@@ -139,6 +152,7 @@ h2 {
 #about {
     background-color: var(--azul-escuro);
     display: flex;
+    flex-wrap: wrap;
     color: #fff;
 }
 
@@ -190,13 +204,14 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 1;
 }
 
 .items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     margin: 45px 0;
 }
 
@@ -206,12 +221,7 @@ p {
     padding: 35px;
     border-radius: 30px;
     background: #fff;
-    margin-bottom: 20px;
-
-}
-
-.item:nth-child(n+1){
-    margin-right: 20px;
+    margin: 10px;
 }
 
 .card {
@@ -279,20 +289,24 @@ p {
     border-radius: 40px;
     width: calc(100% - 80px);
     height: 80vh;
+    max-height: 650px;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
 }
+
+.slide:nth-child(1) .project-image{
+    background: url('../images/prudente-casa-pet.png');
+}
+
 
 .project-image {
     border-radius: 40px 0 0 40px;
     width: 50%;
-    object-fit: cover;
-    object-position: center center;
+    background-size: cover;
+    background-position: center center;
 }
 
-.project-image:nth-child(1) {
-    background: url('../images/prudente-casa-pet.png');
-}
 
 .project-info {
     width: 50%;
@@ -318,12 +332,11 @@ h4 {
 
 .project a {
     position: absolute;
-    bottom: 0;
+    bottom: 45px;
     background-color: #e01abc;
     padding: 12px 30px;
     border-radius: 25px;
     background: #e01abc;
-    margin-bottom: 45px;
     color: #fff;
 }
 
@@ -332,23 +345,25 @@ h4 {
     position: absolute;
     top: 50%;
     width: 25px;
-    padding: 16px;
-    margin-top: -22px;
     color: white;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 5px;
     user-select: none;
+    text-align: center;
+}
+
+.prev{
+    left: 0;
 }
 
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .dot {
@@ -447,4 +462,207 @@ button {
 #contacts .icone {
     margin: 0 30px;
     color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+/* Responsividade */
+
+/* Projects */
+@media (max-width:1150px) {
+    #projects h3 {
+        width: 90vw;
+    }
+    .slideshow-container{
+        width: 90vw;
+    }
+}
+
+/* About */
+@media (max-width:1024px) {
+    .col-1, .col-2 {
+        width: 100%;
+    }
+}
+
+/* Projects */
+@media (max-width:1015px) {
+    .project{
+        height: 65vh;
+    }
+    .project-info {
+        width: 100%;
+    }
+    .project-image {
+        display: none;
+    }
+}
+@media (max-width:945px) {
+    #projects {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .project, .slide, .slideshow-container{
+        width: 100%;
+    }
+    .next {
+        right: 3px;
+    }
+    .prev {
+        left: 3px;
+    }
+
+    .prev, .next {
+        color: #555;
+    }
+}
+
+/* General */
+@media (max-width:885px) {
+    * {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:773px) {
+    * {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:690px) {
+    /* Technologies */
+    .items {
+        margin: 35px 0;
+    }
+    .item {
+        width: 150px;
+        height: 150px;
+        padding: 35px;
+        border-radius: 30px;
+        margin: 8px;
+    }
+
+    /* Contacts */
+    form {
+        width: 90vw;
+    }
+}
+
+/* General */
+@media (max-width:617px) {
+    * {
+        font-size: 10px;
+    }
+}
+
+/* Technologies */
+@media (max-width:600px) {
+    .items {
+        margin: 25px 0;
+    }
+    
+    .item {
+        width: 140px;
+        height: 140px;
+        padding: 25px;
+        border-radius: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 570px){
+    #technologies {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .items {
+        margin: 5px 0;
+    }
+    .item {
+        padding: 25px;
+        border-radius: 20px;
+        margin: 5px;
+    }
+}
+
+/* Menu */
+@media (max-width:692px) {
+    .visible {
+        display: block;
+    }
+    nav ul {
+        margin: 0;
+        flex-direction: column;
+        position: fixed;
+        top: 72px;
+        width: 220px;
+        max-width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+    nav ul li {
+        padding: 0;
+        margin: 0;
+    }
+    nav ul li a {
+        display: block;
+        font-size: 2em;
+        padding: 10px 15px;
+        margin: 0;
+    }
+    nav ul li a:hover {
+        border: none;
+        color: #555
+    }
+}
+
+@media (max-width:500px) {
+    /* Header */
+    #title-name {
+        margin: 20px;
+    }
+    /* General */
+    h3 {
+        text-align: center;
+    }
+    section {
+        padding: 20px;
+    }
+    /* Technologies */
+    #technologies span {
+        font-size: 16px;
+    }
+    .items {
+        margin: 5px 0;
+    }
+    .item {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Technologies */
+@media (max-width:380px) {
+    .item {
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
+@media (max-width:336px) {
+    /* Header */
+    #title-name {
+        margin: 10px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    /* General */
+    section {
+        padding: 10px;
+    }
 }
