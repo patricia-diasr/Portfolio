@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prudente Casa Pet</title>
+    <link rel="stylesheet" href="./assets/css/projeto1.css">
+</head>
+<body>
+    <canvas id="sparkles"></canvas>
+    <main>
+        <nav>
+            <ul id="menu">
+                <li><a href="./index.html#about">Sobre mim</a></li>
+                <li><a href="./index.html#technologies">Tecnologias</a></li>
+                <li><a href="./index.html#projects">Projetos</a></li>
+                <li><a href="./index.html#contacts">Contato</a></li>
+            </ul>
+            <svg onClick="toggleMenu()" id="open-menu" class="visible" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+            <svg onClick="toggleMenu()" id="close-menu" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </nav>
+
+        <header>
+            <div class="stars"></div>
+            <div id="title-name">
+                <h1>Projeto: Prudente Casa Pet</h1>
+            </div>
+        </header>
+
+        <section id="about">
+            <div class="col-1">
+                
+            </div>
+            <div class="col-2">
+                <div class="info">
+                    <h3>Sobre o projeto...</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quia aliquid dicta natus nesciunt? Et veniam nesciunt ex numquam dolor hic cupiditate qui beatae cum dicta! Temporibus fugit doloremque tempora.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem, vitae aliquam, velit impedit nulla distinctio similique necessitatibus itaque est quas suscipit! Consequuntur possimus labore temporibus culpa magni dolorem fugiat.</p>
+                </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <video id="main-video" onplay="play('./assets/videos/agenda.mp4')" src="./assets/videos/agenda.mp4" controls></video>
+            <ul id="video-playlist"></ul>
+        </section>
+    </main>
+</body>
+<script src="assets/js/cursor.js"></script>
+<script src="assets/js/videoGallery.js"></script>
+</html>

@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --azul-escuro: #030637;
+    --preto: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#sparkles {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+}
+
+main {
+    width: 100%;
+}
+
+
+section {
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+    padding: 45px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Efeito de céu estrelado */
+
+.stars {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 1px;
+    width: 1px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: -41vw -44vh 2px 2px #fff,45vw -17vh 3px 2px #fff,36vw 31vh 3px 2px #fff,3vw -27vh 2px 2px #fff,38vw -9vh 2px 2px #fff,25vw -22vh 2px 2px #fff,4vw 34vh 3px 2px #fff,39vw -30vh 3px 2px #fff,3vw 33vh 2px 2px #fff,-26vw -28vh 2px 2px #fff,7vw -42vh 2px 2px #fff,36vw 8vh 3px 2px #fff,-32vw 46vh 2px 2px #fff,23vw 36vh 3px 2px #fff,43vw -10vh 3px 2px #fff,3vw -29vh 3px 2px #fff,4vw 23vh 3px 2px #fff,-48vw 12vh 2px 2px #fff,3vw -4vh 3px 2px #fff,25vw 38vh 2px 2px #fff,-48vw 41vh 2px 2px #fff,-33vw 6vh 2px 2px #fff,-6vw -32vh 3px 2px #fff,-18vw -31vh 3px 2px #fff,-29vw -12vh 2px 2px #fff,-6vw 23vh 2px 2px #fff,33vw -6vh 2px 2px #fff,-39vw 45vh 2px 2px #fff,34vw 31vh 2px 2px #fff,-42vw 4vh 3px 2px #fff,-13vw 35vh 2px 2px #fff,-50vw -45vh 2px 2px #fff,-19vw 0vh 2px 2px #fff,-8vw -36vh 3px 2px #fff,-20vw -20vh 2px 2px #fff,33vw -12vh 3px 2px #fff,-42vw -25vh 2px 2px #fff,-31vw -42vh 2px 2px #fff,40vw -30vh 3px 2px #fff,47vw 35vh 2px 2px #fff,26vw 32vh 3px 2px #fff,-23vw -31vh 3px 2px #fff,37vw -20vh 2px 2px #fff,37vw -3vh 3px 2px #fff,34vw -9vh 3px 2px #fff,-41vw 7vh 2px 2px #fff,43vw 31vh 3px 2px #fff,25vw -1vh 3px 2px #fff,-46vw -7vh 2px 2px #fff,-8vw 18vh 3px 2px #fff;
+    box-shadow: -39vw 17vh 3px 1px #fff,20vw -43vh 3px 1px #fff,15vw -35vh 4px 1px #fff,-18vw -32vh 1px 1px #fff,49vw 13vh 1px 1px #fff,47vw 15vh 1px 1px #fff,24vw -46vh 3px 1px #fff,-7vw -23vh 1px 1px #fff,-2vw 44vh 4px 1px #fff,-41vw 42vh 2px 1px #fff,1vw 32vh 1px 1px #fff,-20vw -1vh 2px 1px #fff,-44vw 28vh 2px 1px #fff,50vw -33vh 4px 1px #fff,35vw -36vh 3px 1px #fff,-31vw 20vh 3px 1px #fff,-38vw 44vh 4px 1px #fff,14vw -19vh 1px 1px #fff,49vw -17vh 4px 1px #fff,-22vw -18vh 4px 1px #fff,17vw -33vh 2px 1px #fff,8vw 31vh 1px 1px #fff,-41vw 35vh 1px 1px #fff,-2vw 32vh 3px 1px #fff,-21vw 40vh 2px 1px #fff,27vw 16vh 3px 1px #fff,-32vw -50vh 2px 1px #fff,-41vw -2vh 1px 1px #fff,-26vw -42vh 3px 1px #fff,-32vw -41vh 3px 1px #fff,32vw 22vh 3px 1px #fff,21vw -39vh 1px 1px #fff,47vw 5vh 4px 1px #fff,-49vw -14vh 2px 1px #fff,-36vw -10vh 2px 1px #fff,-31vw -12vh 4px 1px #fff,3vw -15vh 2px 1px #fff,-47vw -31vh 4px 1px #fff,-21vw -20vh 2px 1px #fff,-26vw -22vh 2px 1px #fff,33vw 0vh 3px 1px #fff,8vw 30vh 2px 1px #fff,-1vw -24vh 1px 1px #fff,33vw -38vh 3px 1px #fff,34vw -21vh 4px 1px #fff,-28vw -6vh 4px 1px #fff,-48vw 16vh 4px 1px #fff,-50vw -44vh 4px 1px #fff,-49vw 46vh 3px 1px #fff,21vw -22vh 4px 1px #fff,-4vw 36vh 3px 1px #fff,-8vw -30vh 4px 1px #fff,45vw -25vh 3px 1px #fff,-28vw 40vh 2px 1px #fff,-32vw 11vh 4px 1px #fff,24vw 24vh 2px 1px #fff,11vw 38vh 3px 1px #fff,36vw -1vh 4px 1px #fff,48vw 42vh 1px 1px #fff,-49vw -37vh 1px 1px #fff,1vw -16vh 4px 1px #fff,-15vw 33vh 1px 1px #fff,10vw -25vh 2px 1px #fff,-18vw -45vh 2px 1px #fff,-21vw 41vh 1px 1px #fff,19vw 25vh 1px 1px #fff,8vw -23vh 2px 1px #fff,37vw 2vh 2px 1px #fff,-42vw -10vh 1px 1px #fff,-30vw -50vh 1px 1px #fff,-9vw -9vh 3px 1px #fff,-26vw 10vh 2px 1px #fff,15vw -30vh 2px 1px #fff,-4vw 7vh 3px 1px #fff,-45vw 13vh 1px 1px #fff,28vw 6vh 2px 1px #fff,6vw -28vh 1px 1px #fff,-30vw -43vh 4px 1px #fff,-14vw -9vh 3px 1px #fff,-19vw 43vh 1px 1px #fff,25vw 4vh 2px 1px #fff,-37vw -2vh 3px 1px #fff,-23vw -3vh 4px 1px #fff,2vw 2vh 2px 1px #fff,-12vw -41vh 2px 1px #fff,4vw 26vh 1px 1px #fff,-37vw -13vh 3px 1px #fff,32vw -13vh 4px 1px #fff,13vw -50vh 2px 1px #fff,-30vw 40vh 1px 1px #fff,-8vw 17vh 3px 1px #fff,-43vw -43vh 2px 1px #fff,17vw 33vh 1px 1px #fff,40vw -12vh 1px 1px #fff,12vw 41vh 2px 1px #fff,-43vw -32vh 1px 1px #fff,-11vw 23vh 2px 1px #fff,-20vw 19vh 4px 1px #fff,19vw 17vh 3px 1px #fff,47vw 4vh 3px 1px #fff;
+    animation: zoom 10s alternate infinite;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+/* Menu */
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    display: flex;
+    justify-content: end;
+    width: 100vw;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(3,6,55,1) 100%);
+}
+
+.nav * {
+    transition: all .35s ease;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 25px 45px;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav a {
+    font-size: 1.3em;
+    color: #fff;
+    padding: 10px;
+    margin-left: 30px;
+
+}
+
+nav a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+nav svg {
+    color: #fff;
+    width: 2.2em;
+    margin: 25px 45px;
+    display: none;
+}
+
+
+#close-menu{
+    width: 2.4em;        
+}
+
+
+/* Header */
+
+header {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(3,6,55,1) 100%);
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+
+#title-name {
+    position: absolute;
+    bottom: 0;
+    margin: 45px;
+}
+
+h1 {
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+
+/* About */
+
+#about {
+    background-color: var(--azul-escuro);
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+h3 {
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.col-1 {
+    width: 35%;
+}
+
+.col-2 {
+    width: 65%;
+    display: flex;
+    align-items: center;
+}
+
+p {
+    text-align: start;
+    text-indent: 2em;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+
+/* Gallery */
+
+#gallery {
+    display: flex;
+    justify-content: space-between;
+    background-color: #030637;
+}
+
+
+
+#main-video {
+    width: calc(50vw - 90px);
+    height: 24.23vw;
+    background: #fff;
+    border-radius: 15px;
+}
+
+#video-playlist {
+    height: 24.23vw;
+    overflow-y: auto;
+}
+
+#video-playlist::-webkit-scrollbar {
+    width: 4px;
+}
+
+#video-playlist::-webkit-scrollbar-track {
+    background: #f1f1f130;
+}
+
+#video-playlist::-webkit-scrollbar-thumb {
+    background: #8888884e;
+    border-radius: 4px;
+}
+
+#video-playlist::-webkit-scrollbar-thumb:hover {
+    background: #55555565;
+}
+
+#video-playlist li {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.video-thumb{ 
+    width: 12.5vw;
+    height: 7.03vw;
+    background: #fff;
+    border-radius: 15px 0 0 15px;
+    border: 10px solid white;
+}
+
+.video-details {
+    width: calc(37.5vw - 65px);
+    height: 7.03vw;
+    background: #fff;
+    border-radius: 0 15px 15px 0;
+    margin-right: 15px;
+    padding: 15px;
+}
+
+.video-details h4 {
+    font-size: 1em;
+}
+
+.video-details p {
+    font-size: 0.8em;
+    height: calc(7.03vw - 30px - 1em);
+    text-indent: 0;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+
+
