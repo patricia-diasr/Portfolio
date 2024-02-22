@@ -1,7 +1,13 @@
 # Portfolio
 
+Projeto desenvolvido com HTML, CSS e JavaScript como portfólio pessoal
 
+<h4 align="center"> 
+    :construction:  Projeto em construção  :construction:
+</h4>
 
+<br/>
+<br/>
 
 ## Referências e Inspirações
 
