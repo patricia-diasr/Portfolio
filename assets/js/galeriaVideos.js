@@ -17,28 +17,28 @@ const clear = () => {
 const videos = [
     {
         name: 'agenda.mp4',
-        title: 'Schedule Screen',
-        description: 'Reading, creation, updating, and deletion of appointments'
+        title: 'Tela Agenda',
+        description: 'Leitura, cadastro, atualização e deleção de agendamentos'
     }, 
     {
         name: 'pets.mp4',
-        title: 'Pet Screen',
-        description: 'Reading, creation, updating, and deletion of attended pets, access to their packages and medical procedures'
+        title: 'Tela Pet',
+        description: 'Leitura, cadastro, atualização e deleção de pets atendidos, acesso aos seus pacotes e procedimentos médicos'
     }, 
     {
         name: 'pagamentos.mp4',
-        title: 'Payment Report',
-        description: 'Search, reading, and updating of pending and completed payments'
+        title: 'Relatório de Pagamento',
+        description: 'Pesquisa, leitura e atualização de pagamentos pendentes e efetuados'
     }, 
     {
         name: 'login-admin.mp4',
-        title: 'Application (Administrator)',
-        description: 'Administrator login in the application, visualization of payments, and posts of their pets'
+        title: 'Aplicativo (Administrador)',
+        description: 'Login do Administrador no aplicativo, visualização de pagamentos e postagens de seus pets'
     }, 
     {
         name: 'login-tutor.mp4',
-        title: 'Application (Client)',
-        description: 'Client login, visualization of appointments for the current day, and creation of posts for hosted pets'
+        title: 'Aplicativo (Cliente)',
+        description: 'Login do cliente, visualização dos agendamentos do dia atual, e criação de postagens para pets hospedados'
     }
 ];
 

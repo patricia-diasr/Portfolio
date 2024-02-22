@@ -1,25 +1,26 @@
 # Portfolio
 
-Projeto desenvolvido com HTML, CSS e JavaScript como portfólio pessoal
+Project developed with HTML, CSS, and JavaScript as a personal portfolio.
+
 
 <h4 align="center"> 
-    :construction:  Projeto em construção  :construction:
+    :construction: Project under construction :construction:
 </h4>
 
 <br/>
 <br/>
 
-## Referências e Inspirações
+## References and Inspirations
 
-### Céu estrelado
+### Starry Sky
 https://dev.to/0shuvo0/pure-css-infinite-spacegalaxy-with-just-one-div-4o02
 
-### Cursor com sparkles
+### Cursor with Sparkles
 https://www.youtube.com/watch?v=IdHFxrlV9-E&t=63s
 
-### Galeria de videos
+### Video Gallery
 https://www.youtube.com/watch?feature=shared&v=WSasPdFZj58
 
-### Icones
+### Icons
 https://icons.getbootstrap.com/
 https://simpleicons.org/
