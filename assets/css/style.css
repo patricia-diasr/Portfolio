@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Quicksand:wght@300..700&display=swap');
 
 :root {
-    --azul-escuro: #030637;
-    --preto: #000000;
+    --dark-blue: #030637;
+    --preto: #0a0a0a;
+    --white: #F5F3F5;
+    --pink: #FF1053;
 }
 
 * {
@@ -80,7 +82,7 @@ nav {
     display: flex;
     justify-content: end;
     width: 100vw;
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(3,6,55,1) 100%);
+    background: linear-gradient(0deg, var(--preto) 0%, var(--dark-blue) 100%);
 }
 
 .nav * {
@@ -99,18 +101,18 @@ nav ul li {
 
 nav a {
     font-size: 1.3em;
-    color: #fff;
+    color: var(--white);
     padding: 10px;
     margin-left: 30px;
 
 }
 
 nav a:hover{
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid var(--white);
 }
 
 nav svg {
-    color: #fff;
+    color: var(--white);
     width: 2.2em;
     margin: 25px 45px;
     display: none;
@@ -124,9 +126,9 @@ nav svg {
 /* Header */
 
 header {
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(3,6,55,1) 100%);
+    background: linear-gradient(0deg, var(--preto) 0%, var(--dark-blue) 100%);
     height: 100vh;
-    color: #fff;
+    color: var(--white);
     position: relative;
 }
 
@@ -150,10 +152,10 @@ h2 {
 /* About */
 
 #about {
-    background-color: var(--azul-escuro);
+    background-color: var(--dark-blue);
     display: flex;
     flex-wrap: wrap;
-    color: #fff;
+    color: var(--white);
 }
 
 .col-1 {
@@ -209,7 +211,7 @@ h3 {
 }
 
 .icone:hover {
-    filter: drop-shadow(0 0 10px white);
+    filter: drop-shadow(0 0 10px var(--white));
 }
 
 p {
@@ -224,7 +226,7 @@ p {
 
 #technologies {
     background: rgb(2, 3, 11);
-    color: #fff;
+    color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -244,7 +246,7 @@ p {
     height: 180px;
     padding: 35px;
     border-radius: 30px;
-    background: #fff;
+    background: var(--white);
     margin: 10px;
 }
 
@@ -283,17 +285,17 @@ p {
 
 .tech-name {
     font-size: 24px;
-    color: black;
+    color: var(--preto);
 }
 
 /* Projects */
 
 #projects {
-    background: var(--azul-escuro);
+    background: var(--dark-blue);
 }
 
 #projects h3 {
-    color: #fff;
+    color: var(--white);
     width: 900px;
     margin: auto;
 }
@@ -309,7 +311,7 @@ p {
 }
 
 .project {
-    background: #fff;
+    background: var(--white);
     border-radius: 40px;
     width: calc(100% - 80px);
     height: 80vh;
@@ -357,19 +359,26 @@ h4 {
 .project a {
     position: absolute;
     bottom: 45px;
-    background-color: #e01abc;
     padding: 12px 30px;
     border-radius: 25px;
-    background: #e01abc;
-    color: #fff;
+    background: var(--pink);
+    color: var(--white);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
+
+.project a:hover {
+    filter: brightness(1.5);
+}
+
 
 .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: 25px;
-    color: white;
+    color: var(--white);
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -424,7 +433,7 @@ h4 {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    color: #fff;
+    color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -464,7 +473,7 @@ textarea::-webkit-scrollbar {
 }
 
 textarea::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: var(--white);
 }
 
 textarea::-webkit-scrollbar-thumb {
@@ -479,16 +488,22 @@ textarea::-webkit-scrollbar-thumb:hover {
 button {
     padding: 12px 12px;
     border-radius: 10px;
-    background: #e01abc;
+    background: var(--pink);
+    color: var(--white);
+    font-weight: bold;
     margin-bottom: 45px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+button:hover {
+    filter: brightness(1.5);
 }
 
 #contacts .icone {
     margin: 0 30px;
     color: rgba(255, 255, 255, 0.7);
 }
-
-
 
 /* Responsividade */
 
@@ -638,6 +653,7 @@ button {
         margin: 0;
         display: none;
     }
+
     nav ul li {
         padding: 0;
         margin: 0;

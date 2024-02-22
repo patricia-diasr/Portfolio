@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Quicksand:wght@300..700&display=swap');
 
 :root {
-    --azul-escuro: #030637;
-    --preto: #000000;
+    --dark-blue: #030637;
+    --preto: #0a0a0a;
+    --white: #F5F3F5;
+    --pink: #FF1053;
 }
 
 * {
@@ -34,9 +36,7 @@ main {
     width: 100%;
 }
 
-
 section {
-    min-height: 100vh;
     position: relative;
     z-index: 2;
     padding: 45px;
@@ -81,7 +81,7 @@ nav {
     display: flex;
     justify-content: end;
     width: 100vw;
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(3,6,55,1) 100%);
+    background: linear-gradient(0deg, var(--preto) 0%, var(--dark-blue) 100%);
 }
 
 .nav * {
@@ -100,18 +100,18 @@ nav ul li {
 
 nav a {
     font-size: 1.3em;
-    color: #fff;
+    color: var(--white);
     padding: 10px;
     margin-left: 30px;
 
 }
 
 nav a:hover{
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid var(--white);
 }
 
 nav svg {
-    color: #fff;
+    color: var(--white);
     width: 2.2em;
     margin: 25px 45px;
     display: none;
@@ -122,39 +122,12 @@ nav svg {
     width: 2.4em;        
 }
 
-
 /* Header */
 
 header {
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(3,6,55,1) 100%);
+    background: linear-gradient(0deg, var(--preto) 0%, var(--dark-blue) 100%);
     height: 100vh;
-    color: #fff;
-    position: relative;
-}
-
-
-#title-name {
-    position: absolute;
-    bottom: 0;
-    margin: 45px;
-}
-
-h1 {
-    font-family: "Gloria Hallelujah", cursive;
-    font-size: 4em;
-}
-
-h2 {
-    font-size: 2.5em;
-}
-
-
-/* About */
-
-header {
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(3,6,55,1) 100%);
-    height: 100vh;
-    color: #fff;
+    color: var(--white);
     position: relative;
 }
 
@@ -178,10 +151,11 @@ h2 {
 /* About */
 
 #about {
-    background-color: var(--azul-escuro);
+    background-color: var(--dark-blue);
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    color: #fff;
+    color: var(--white);
 }
 
 .col-1 {
@@ -237,7 +211,7 @@ h3 {
 }
 
 .icone:hover {
-    filter: drop-shadow(0 0 10px white);
+    filter: drop-shadow(0 0 10px var(--white));
 }
 
 p {
@@ -247,21 +221,98 @@ p {
     margin-bottom: 10px;
 }
 
+/* More Information */
 
+#more-information {
+    background: rgb(2, 3, 11);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 45px 0;
+}
+
+.item {
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 30px;
+    background: var(--white);
+    margin: 10px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.item:hover .card {
+    transform: rotateY(180deg);
+}
+
+.item:hover {
+    filter: brightness(0.9)
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.front {
+    transform: rotateY(0deg);
+    padding: 100px;
+}
+
+.front svg {
+    object-fit: cover;
+}
+.back {
+    transform: rotateY(180deg);
+}
+
+.text h4{
+    font-size: 24px;
+    color: var(--preto);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text p{
+    font-size: 20px;
+    color: var(--preto);
+    text-align: center;
+}
 
 /* Gallery */
 
+#gallery h3 {
+    width: 100vw;
+    color: var(--white);
+}
+
 #gallery {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background: rgb(2, 3, 11);
     z-index: 1;
-}
-
-#projects h3 {
-    color: #fff;
-    width: 100%;
 }
 
 #main-video {
