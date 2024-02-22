@@ -529,8 +529,8 @@ button:hover {
     }
 
     .square-container {
-        width: 100%;
-        padding-bottom: 100%;
+        width: 50%;
+        padding-bottom: 50%;
     }
 }
 
@@ -570,12 +570,51 @@ button:hover {
 @media (max-width:885px) {
     * {
         font-size: 14px;
-    }
+    }    
 }
 
 @media (max-width:773px) {
     * {
         font-size: 12px;
+    }
+    /* About */
+    .col-2 {
+        height: min-content;
+    }
+}
+
+/* Menu */
+@media (max-width:692px) {
+    .visible {
+        display: block;
+    }
+    nav ul {
+        margin: 0;
+        flex-direction: column;
+        position: fixed;
+        top: 72px;
+        width: 220px;
+        max-width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+
+    nav ul li {
+        padding: 0;
+        margin: 0;
+    }
+    nav ul li a {
+        display: block;
+        font-size: 2em;
+        padding: 10px 15px;
+        margin: 0;
+    }
+    nav ul li a:hover {
+        border: none;
+        color: #555
     }
 }
 
@@ -635,38 +674,12 @@ button:hover {
     }
 }
 
-/* Menu */
-@media (max-width:692px) {
-    .visible {
-        display: block;
-    }
-    nav ul {
-        margin: 0;
-        flex-direction: column;
-        position: fixed;
-        top: 72px;
-        width: 220px;
-        max-width: 100%;
-        background: rgba(0, 0, 0, 0.9);
-        height: 100vh;
-        padding: 0;
-        margin: 0;
-        display: none;
-    }
+/* About */
 
-    nav ul li {
-        padding: 0;
-        margin: 0;
-    }
-    nav ul li a {
-        display: block;
-        font-size: 2em;
-        padding: 10px 15px;
-        margin: 0;
-    }
-    nav ul li a:hover {
-        border: none;
-        color: #555
+@media (max-width:530px) {
+    .square-container {
+        width: 75%;
+        padding-bottom: 75%;
     }
 }
 
@@ -681,6 +694,17 @@ button:hover {
     }
     section {
         padding: 20px;
+    }
+    #title-name {
+        margin: 20px;
+    }
+    nav ul {
+        margin: 15px 20px;
+        top: 38px;
+        right: -14px;
+    }
+    nav svg {
+        margin: 15px 10px;
     }
     /* Technologies */
     #technologies span {
@@ -714,5 +738,16 @@ button:hover {
     /* General */
     section {
         padding: 10px;
+    }
+    #title-name {
+        margin: 10px;
+    }
+    nav ul {
+        margin: 15px 10px;
+        top: 38px;
+        right: -8px;
+    }
+    nav svg {
+        margin: 15px 10px;
     }
 }

@@ -40,6 +40,7 @@ section {
     position: relative;
     z-index: 2;
     padding: 45px;
+    min-height: 100vh;
 }
 
 a {
@@ -131,7 +132,6 @@ header {
     position: relative;
 }
 
-
 #title-name {
     position: absolute;
     bottom: 0;
@@ -152,7 +152,6 @@ h2 {
 
 #about {
     background-color: var(--dark-blue);
-    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     color: var(--white);
@@ -237,7 +236,7 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 45px 0;
+    margin: 35px 0 15px 0;
 }
 
 .item {
@@ -282,29 +281,25 @@ p {
 .front svg {
     object-fit: cover;
 }
+
 .back {
     transform: rotateY(180deg);
 }
 
 .text h4{
-    font-size: 24px;
+    font-size: 1.5em;
     color: var(--preto);
     text-align: center;
     margin-bottom: 20px;
 }
 
 .text p{
-    font-size: 20px;
+    font-size: 1.2em;
     color: var(--preto);
     text-align: center;
 }
 
 /* Gallery */
-
-#gallery h3 {
-    width: 100vw;
-    color: var(--white);
-}
 
 #gallery {
     display: flex;
@@ -313,6 +308,12 @@ p {
     align-items: center;
     background: rgb(2, 3, 11);
     z-index: 1;
+    min-height: 0;
+}
+
+#gallery h3 {
+    width: 100vw;
+    color: var(--white);
 }
 
 #main-video {
@@ -378,5 +379,287 @@ p {
     text-overflow: ellipsis; 
 }
 
+/* Responsividade */
+
+@media (max-width:1150px) {
+    /* About */
+    .col-1 {
+        padding: 10px 20px 10px 10px;
+    }
+}
+
+/* About */
+@media (max-width:1024px) {
+    .col-1, .col-2 {
+        width: 100%;
+    }
+
+    .square-container {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+}
+
+/* General */
+@media (max-width:930px) {
+    section {
+        padding: 20px;
+    }
+    #title-name {
+        margin: 20px;
+    }
+    nav ul {
+        margin: 25px 20px;
+    }
+    nav svg {
+        margin: 25px 20px;
+    }
+    /* Gallery */
+    #gallery {
+        justify-content: center;
+    }
+    #main-video {
+        width: calc(100vw - 90px);
+        height: 50.62vw;
+    }
+    #video-playlist {
+        width: calc(100vw - 90px);
+        margin-top: 20px;
+        height: fit-content;
+    }
+    .video-thumb{ 
+        width: 25vw;
+        height: 14.99vw;
+        background: #fff;
+        border-radius: 15px 0 0 15px;
+        border: 10px solid white;
+    }
+    .video-details {
+        width: 75vw;
+        height: 14.99vw;
+        margin-right: 0;
+    }
+    #video-playlist li {
+        margin-bottom: 10px;
+    }
+    .video-details h4 {
+        font-size: 1.4em;
+    }
+    
+    .video-details p {
+        font-size: 1.2em;
+        height: auto;
+    }
+}
+
+@media (max-width:885px) {
+    * {
+        font-size: 14px;
+    }
+    /* More Information */
+    .item {
+        width: 300px;
+        height: 300px;
+        padding: 10px;
+        border-radius: 25px;
+        margin: 5px;
+    }
+}
+
+@media (max-width:773px) {
+    * {
+        font-size: 12px;
+    }
+    /* About */
+    .col-2 {
+        height: min-content;
+    }
+}
+
+/* Menu */
+@media (max-width:692px) {
+    .visible {
+        display: block;
+    }
+    nav ul {
+        margin: 0;
+        flex-direction: column;
+        position: fixed;
+        top: 72px;
+        width: 220px;
+        max-width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+
+    nav ul li {
+        padding: 0;
+        margin: 0;
+    }
+    nav ul li a {
+        display: block;
+        font-size: 2em;
+        padding: 10px 15px;
+        margin: 0;
+    }
+    nav ul li a:hover {
+        border: none;
+        color: #555
+    }
+}
+
+/* More Information */
+@media (max-width:660px) {
+    .item {
+        width: calc(50vw - 26px);
+        height: calc(50vw - 26px);
+        padding: 2px;
+        border-radius: 18px;
+    }
+    .text h4 {
+        font-size: 1.6em;
+    }
+    .text p {
+        font-size: 1.4em;
+    }
+}
+
+/* General */
+@media (max-width:617px) {
+    * {
+        font-size: 10px;
+    }
+}
+
+/* More Information */
+@media (max-width:610px) {
+    .items {
+        margin: 0;
+    }
+    .item {
+        width: 350px;
+        height: 350px;
+        padding: 5px;
+        border-radius: 25px;
+        margin: 5px;
+    }
+    .text h4 {
+        font-size: 1.8em;
+    }
+    .text p {
+        font-size: 1.6em;
+    }
+}
+
+/* Gallery */
+@media (max-width:560px) {
+    #gallery {
+        padding: 15px;
+    }
+    #main-video {
+        width: calc(100vw - 30px);
+        height: 52.24vw;
+    }
+    #video-playlist {
+        width: calc(100vw - 30px);
+    }
+    .video-thumb{ 
+        width: 27vw;
+        height: 16.72vw;
+    }
+    .video-details {
+        width: 73vw;
+        height: 16.72vw;
+    }
+    .video-details h4 {
+        font-size: 1.2em;
+    }
+    
+    .video-details p {
+        font-size: 1em;
+    }
+}
+
+/* About */
+
+@media (max-width:530px) {
+    .square-container {
+        width: 75%;
+        padding-bottom: 75%;
+    }
+}
+
+@media (max-width:500px) {
+    /* Header */
+    #title-name {
+        margin: 20px;
+    }
+    /* General */
+    h3 {
+        text-align: center;
+    }
+}
+
+/* Gallery */
+@media (max-width:460px) {
+    .video-thumb{ 
+        width: 30vw;
+        height: 18.7vw;
+    }
+    .video-details {
+        width: 70vw;
+        height: 18.7vw;
+    }
+}
+
+@media (max-width:400px) {
+    #gallery {
+        padding: 8px;
+    }
+    #main-video {
+        width: calc(100vw - 16px);
+        height: 53.88vw;
+        height: auto;
+    }
+    #video-playlist {
+        width: calc(100vw - 16px);
+    }
+    .video-thumb{ 
+        width: 30vw;
+        height: 19.08vw;
+    }
+    .video-details {
+        width: 70vw;
+        height: 19.08vw;
+    }
+}
+
+@media (max-width:336px) {
+    /* Header */
+    #title-name {
+        margin: 10px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    /* General */
+    section {
+        padding: 10px;
+    }
+    #title-name {
+        margin: 10px;
+    }
+    nav ul {
+        margin: 15px 10px;
+        top: 38px;
+        right: -8px;
+    }
+    nav svg {
+        margin: 15px 10px;
+    }
+}
 
 
