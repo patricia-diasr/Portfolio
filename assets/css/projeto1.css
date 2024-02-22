@@ -318,7 +318,7 @@ p {
 
 #main-video {
     width: calc(50vw - 90px);
-    height: 24.23vw;
+    max-height: 24.23vw;
     background: #fff;
     border-radius: 15px;
 }
@@ -420,7 +420,7 @@ p {
     }
     #main-video {
         width: calc(100vw - 90px);
-        height: 50.62vw;
+        max-height: 50.62vw;
     }
     #video-playlist {
         width: calc(100vw - 90px);
@@ -452,11 +452,8 @@ p {
     }
 }
 
+/* More Information */
 @media (max-width:885px) {
-    * {
-        font-size: 14px;
-    }
-    /* More Information */
     .item {
         width: 300px;
         height: 300px;
@@ -466,18 +463,8 @@ p {
     }
 }
 
-@media (max-width:773px) {
-    * {
-        font-size: 12px;
-    }
-    /* About */
-    .col-2 {
-        height: min-content;
-    }
-}
-
 /* Menu */
-@media (max-width:692px) {
+@media (max-width:832px) {
     .visible {
         display: block;
     }
@@ -486,7 +473,7 @@ p {
         flex-direction: column;
         position: fixed;
         top: 72px;
-        width: 220px;
+        width: 320px;
         max-width: 100%;
         background: rgba(0, 0, 0, 0.9);
         height: 100vh;
@@ -511,13 +498,18 @@ p {
     }
 }
 
+@media (max-width:773px) {
+    /* About */
+    .col-2 {
+        height: min-content;
+    }
+}
+
 /* More Information */
 @media (max-width:660px) {
     .item {
-        width: calc(50vw - 26px);
-        height: calc(50vw - 26px);
-        padding: 2px;
-        border-radius: 18px;
+        width: 400px;
+        height: 400px;
     }
     .text h4 {
         font-size: 1.6em;
@@ -530,7 +522,7 @@ p {
 /* General */
 @media (max-width:617px) {
     * {
-        font-size: 10px;
+        font-size: 16px;
     }
 }
 
@@ -561,7 +553,7 @@ p {
     }
     #main-video {
         width: calc(100vw - 30px);
-        height: 52.24vw;
+        max-height: 52.24vw;
     }
     #video-playlist {
         width: calc(100vw - 30px);
@@ -615,13 +607,21 @@ p {
     }
 }
 
+/* Header */
 @media (max-width:400px) {
+    h1 {
+        font-size: 3.1em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    /* Gallery */
     #gallery {
         padding: 8px;
     }
     #main-video {
         width: calc(100vw - 16px);
-        height: 53.88vw;
+        max-height: 53.88vw;
         height: auto;
     }
     #video-playlist {
@@ -634,6 +634,13 @@ p {
     .video-details {
         width: 70vw;
         height: 19.08vw;
+    }
+    /* More Information */
+    .text h4 {
+        font-size: 1.5em;
+    }
+    .text p {
+        font-size: 1.3em;
     }
 }
 
