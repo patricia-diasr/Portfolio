@@ -330,6 +330,10 @@ p {
     background: url('../images/prudente-casa-pet.png');
 }
 
+.slide:nth-child(2) .project-image{
+    background: url('../images/calculadora.png');
+}
+
 
 .project-image {
     border-radius: 40px 0 0 40px;
