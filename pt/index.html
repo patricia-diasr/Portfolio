@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patrícia Dias</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -215,46 +216,40 @@
             </div>
         </section>
         <section id="projects">
-            <div>
-                <h3>Projetos</h3>
-                <div class="slideshow-container">
-                    <div class="slide fade">
-                        <div class="project">
-                            <div class="project-image"></div>
-                            <div class="project-info">
-                                <div>
-                                    <h4>Prudente Casa Pet</h4>
-                                    <p>Sistema Administrativo criado para empresa de Day Care e Hospedagem Pet que administra agenda e informações relevantes para empresa, e aplicativo que otimiza comunicação com clientes.</p>
-                                    <p><strong>Tecnologias:</strong> Angular, Ionic, API em PHP, Banco de Dados MySQL, Firebase Storage, JWT, Figma, UML</p>
-                                </div>
-                                <a href="./projeto1.html">Ver mais</a>
-                            </div>
-                        </div>
+            <h3>Projetos</h3>
+            <div class="slide">
+                <div class="project-image"></div>
+                <div class="project-info">
+                    <div>
+                        <h4>Prudente Casa Pet</h4>
+                        <p>Sistema Administrativo criado para empresa de Day Care e Hospedagem Pet que administra agenda e informações relevantes para empresa, e aplicativo que otimiza comunicação com clientes.</p>
+                        <p><strong>Tecnologias:</strong> Angular, Ionic, PHP API, MySQL Database, Firebase Storage, JWT, Figma, UML</p>
                     </div>
-                    <div class="slide fade">
-                        <div class="project">
-                            <div class="project-image"></div>
-                            <div class="project-info">
-                                <div>
-                                    <h4>Calculadora</h4>
-                                    <p>Calculadora que realiza funções de adição, subtração, multiplicação, divisão e porcentagem. Possuí tema escuro e claro, além de um histórico armazenado em LocalStorage.</p>
-                                    <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript, TypeScript</p>
-                                </div>
-                                <a href="https://patricia-diasr.github.io/Calculadora/" target="_blank">Ver site</a>
-                            </div>
-                        </div>
-                    </div>
+                    <a href="./projeto1.html">Ver mais</a>
                 </div>
-                    
-                    <a class="prev" onclick="plusSlides(-1)">❮</a>
-                    <a class="next" onclick="plusSlides(1)">❯</a>
-                    
+                <div class="prev" onclick="plusSlides(-1)"><span class="material-symbols-outlined">navigate_before</span></div>
+                <div class="next" onclick="plusSlides(1)"><span class="material-symbols-outlined">navigate_next</span></div>
+                <div class="dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
                 </div>
-                    <br>
-                    <div class="dots" style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span> 
-                        <span class="dot" onclick="currentSlide(2)"></span> 
+            </div>
+            <div class="slide">
+                <div class="project-image"></div>
+                <div class="project-info">
+                    <div>
+                        <h4>Calculatora</h4>
+                        <p>Calculadora que realiza funções de adição, subtração, multiplicação, divisão e porcentagem. Possuí tema escuro e claro, além de um histórico armazenado em LocalStorage.</p>
+                        <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript, TypeScript</p>
                     </div>
+                    <a href="https://patricia-diasr.github.io/Calculadora/" target="_blank">See site</a>
+                </div>
+                <div class="prev" onclick="plusSlides(-1)"><span class="material-symbols-outlined">navigate_before</span></div>
+                <div class="next" onclick="plusSlides(1)"><span class="material-symbols-outlined">navigate_next</span></div>
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot active" onclick="currentSlide(2)"></span>
+                </div>
             </div>
         </section> 
         <section id="contacts">

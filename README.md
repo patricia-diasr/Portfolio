@@ -21,6 +21,7 @@ https://www.youtube.com/watch?v=IdHFxrlV9-E&t=63s
 ### Video Gallery
 https://www.youtube.com/watch?feature=shared&v=WSasPdFZj58
 
-### Icons
+### Icons and Fonts
 https://icons.getbootstrap.com/
 https://simpleicons.org/
+https://fonts.google.com/
