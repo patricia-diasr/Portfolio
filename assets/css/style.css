@@ -331,6 +331,10 @@ p {
     background: url('../images/calculadora.png');
 }
 
+.slide:nth-child(4) .project-image {
+    background: url('../images/latte-lounge.png');
+}
+
 .project-info {
     height: 100%;
     min-height: 400px;
