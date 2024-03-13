@@ -328,10 +328,14 @@ p {
 }
 
 .slide:nth-child(3) .project-image {
-    background: url('../images/calculadora.png');
+    background: url('../images/todolist.png');
 }
 
 .slide:nth-child(4) .project-image {
+    background: url('../images/calculadora.png');
+}
+
+.slide:nth-child(5) .project-image {
     background: url('../images/latte-lounge.png');
 }
 
