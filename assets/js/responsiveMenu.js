@@ -8,3 +8,4 @@ function toggleMenu(){
     const closeMenu = document.querySelector("#close-menu");
     closeMenu.classList.toggle("visible");
 }
+

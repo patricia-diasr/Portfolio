@@ -2,7 +2,7 @@
 
 :root {
     --dark-blue: #030637;
-    --preto: #0a0a0a;
+    --black: #0a0a0a;
     --white: #F5F3F5;
     --pink: #FF1053;
 }
@@ -82,7 +82,7 @@ nav {
     display: flex;
     justify-content: end;
     width: 100vw;
-    background: linear-gradient(0deg, var(--preto) 0%, var(--dark-blue) 100%);
+    background: linear-gradient(0deg, var(--black) 0%, var(--dark-blue) 100%);
 }
 
 .nav * {
@@ -118,15 +118,18 @@ nav svg {
     display: none;
 }
 
-
 #close-menu{
     width: 2.4em;        
+}
+
+.active-section {
+    border-bottom: 2px solid var(--white);
 }
 
 /* Header */
 
 header {
-    background: linear-gradient(0deg, var(--preto) 0%, var(--dark-blue) 100%);
+    background: linear-gradient(0deg, var(--black) 0%, var(--dark-blue) 100%);
     height: 100vh;
     color: var(--white);
     position: relative;
@@ -285,7 +288,7 @@ p {
 
 .tech-name {
     font-size: 24px;
-    color: var(--preto);
+    color: var(--black);
 }
 
 /* Projects */
@@ -601,9 +604,8 @@ button:hover {
         margin: 0;
         display: none;
     }
-
     nav ul li {
-        padding: 0;
+        padding: 0 15px;
         margin: 0;
     }
     nav ul li a {
@@ -612,9 +614,16 @@ button:hover {
         padding: 10px 15px;
         margin: 0;
     }
+    nav ul li a {
+        border-bottom: 1px solid var(--white);
+    }
     nav ul li a:hover {
         border: none;
         color: #555
+    }
+    .active-section {
+        border-bottom: 1px solid var(--white);
+        color: var(--pink);
     }
 }
 
