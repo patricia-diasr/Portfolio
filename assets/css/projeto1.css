@@ -446,12 +446,13 @@ p {
         margin-bottom: 10px;
     }
     .video-details h4 {
-        font-size: 1.4em;
+        font-size: 1.1em;
     }
     
     .video-details p {
-        font-size: 1.2em;
+        font-size: 0.9em;
         height: auto;
+        max-height: 40px;
     }
 }
 
@@ -568,13 +569,15 @@ p {
     .video-details {
         width: 73vw;
         height: 16.72vw;
+        padding: 8px;
     }
     .video-details h4 {
-        font-size: 1.2em;
+        font-size: 1em;
     }
     
     .video-details p {
-        font-size: 1em;
+        font-size: 0.9em;
+        max-height: 40px;
     }
 }
 
@@ -637,6 +640,15 @@ p {
     .video-details {
         width: 70vw;
         height: 19.08vw;
+        padding: 5px;
+    }
+    .video-details h4 {
+        font-size: 1em;
+    }
+    
+    .video-details p {
+        font-size: 0.8em;
+        max-height: 32px;
     }
     /* More Information */
     .text h4 {
