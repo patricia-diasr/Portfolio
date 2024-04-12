@@ -2,11 +2,6 @@
 
 Project developed with HTML, CSS, and JavaScript as a personal portfolio.
 
-
-<h4 align="center"> 
-    :construction: Project under construction :construction:
-</h4>
-
 <br/>
 <br/>
 
