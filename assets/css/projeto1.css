@@ -485,9 +485,8 @@ p {
         margin: 0;
         display: none;
     }
-
     nav ul li {
-        padding: 0;
+        padding: 0 15px;
         margin: 0;
     }
     nav ul li a {
@@ -496,9 +495,16 @@ p {
         padding: 10px 15px;
         margin: 0;
     }
+    nav ul li a {
+        border-bottom: 1px solid var(--white);
+    }
     nav ul li a:hover {
         border: none;
         color: #555
+    }
+    .active-section {
+        border-bottom: 1px solid var(--white);
+        color: var(--pink);
     }
 }
 
