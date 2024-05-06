@@ -3,6 +3,12 @@
 Project developed with HTML, CSS, and JavaScript as a personal portfolio.
 
 <br/>
+
+## Deploy
+
+Portuguese Version: https://patricia-diasr.github.io/Portfolio/pt/ <br/>
+English Version: https://patricia-diasr.github.io/Portfolio/en/
+
 <br/>
 
 ## References and Inspirations
