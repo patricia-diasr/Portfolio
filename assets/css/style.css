@@ -424,6 +424,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   border-radius: 25px;
   padding: 45px;
   background: linear-gradient(145deg, #ffffff, #f0f0f0);
@@ -493,15 +494,7 @@ p {
 }
 
 .slide:nth-child(3) .project-image {
-  background: url("../images/todolist.png");
-}
-
-.slide:nth-child(4) .project-image {
   background: url("../images/calculadora.png");
-}
-
-.slide:nth-child(5) .project-image {
-  background: url("../images/latte-lounge.png");
 }
 
 .project-info {
