@@ -313,7 +313,6 @@ h3 {
   transform: translateY(-5px) scale(1.1);
   background: var(--gradient-secondary);
   color: white;
-  box-shadow: 0 10px 25px rgba(255, 16, 83, 0.4);
 }
 
 p {
@@ -490,10 +489,14 @@ p {
 }
 
 .slide:nth-child(2) .project-image {
-  background: url("../images/prudente-casa-pet.png");
+  background: url("../images/littera.png");
 }
 
 .slide:nth-child(3) .project-image {
+  background: url("../images/prudente-casa-pet.png");
+}
+
+.slide:nth-child(4) .project-image {
   background: url("../images/calculadora.png");
 }
 

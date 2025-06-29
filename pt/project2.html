@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto desenvolvido como parte da disciplina de Projeto de Bloco em Desenvolvimento Back-end, com o objetivo de facilitar a administração de leituras pessoais, oferecendo ao usuário uma plataforma intuitiva e funcional para organizar sua experiência com livros. Desenvolvido com as técnologias .NET, Razor Pages, Entity Framework e SQLite">
+    <title>Patrícia Rodrigues</title>
+    <link rel="stylesheet" href="../assets/css/style.css">    
+    <link rel="stylesheet" href="../assets/css/project.css">
+</head>
+<body>
+    <canvas id="sparkles"></canvas>
+    <main>
+        <nav>
+            <ul id="menu">
+                <li><a href="./index.html#about">Sobre mim</a></li>
+                <li><a href="./index.html#technologies">Tecnologias</a></li>
+                <li><a class="active-section" href="./index.html#projects">Projetos</a></li>
+                <li><a href="./index.html#contacts">Contato</a></li>
+            </ul>
+            <svg onClick="toggleMenu()" id="open-menu" class="visible" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+            <svg onClick="toggleMenu()" id="close-menu" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </nav>
+
+        <header>
+            <div class="stars"></div>
+            <div id="title-name">
+                <h1>Projeto: Littera<h1>
+            </div>
+        </header>
+
+        <section id="about">
+            <div class="col-1">
+                <div class="square-container">
+                    <img id="profile" src="../assets/images/logo-littera.png" alt="Logo Littera">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="info">
+                    <h3>Sobre o projeto...</h3>
+                    <p>O Littera é um sistema desenvolvido para facilitar a administração de leituras pessoais, oferecendo ao usuário uma plataforma intuitiva e funcional para organizar sua experiência com livros. Criado como parte da disciplina de Projeto de Bloco em Desenvolvimento Back-end, o sistema busca unir praticidade e controle em uma única aplicação.</p>
+                    <p>O sistema permite ao usuário cadastrar livros com capa e informações detalhadas, gerenciar o status da leitura (como "Quero ler", "Lendo" ou "Lido"), registrar datas de início e término, fazer anotações e avaliações com até 5 estrelas, visualizar os livros em formato de vitrine, buscar títulos rapidamente e acompanhar um histórico com estatísticas de leitura, como total de livros lidos e progresso anual.</p>
+                </div>
+            </div>
+        </section>
+        <section id="more-information2">
+            <div class="project-details">
+                <h4>Tecnologias utilizadas</h4>
+                <ul class="tech-list">
+                    <li>
+                        <strong>.NET:</strong> Framework principal da aplicação, utilizado para estruturar o sistema e fornecer suporte ao desenvolvimento web moderno com alto desempenho.
+                    </li>
+                    <li>
+                        <strong>Razor Pages:</strong> Utilizado para criar páginas dinâmicas de forma simples e eficiente, unindo a lógica do servidor com o HTML da interface.
+                    </li>
+                    <li>
+                        <strong>Entity Framework:</strong> ORM (Object-Relational Mapper) que facilitou a comunicação entre o sistema e o banco de dados, permitindo trabalhar com dados por meio de classes C#.
+                    </li>
+                    <li>
+                        <strong>SQLite:</strong> Banco de dados leve e eficiente, ideal para aplicações locais ou de pequeno porte. Foi utilizado para armazenar todas as informações do usuário e seus livros.
+                    </li>
+                    <li>
+                        <strong>HTML5 e CSS3:</strong> Utilizados para estruturar e estilizar a interface do usuário, garantindo uma navegação intuitiva e visual agradável.
+                    </li>
+                </ul>
+                <a href="https://github.com/patricia-diasr/Littera" title="Ver repositório Literra" target="_blank">Ver no GitHub</a>
+            </div>
+        </section>
+        <section id="gallery" class="black-background">
+            <div class="stars"></div>
+            <h3>Veja funcionando</h3>
+            <video id="main-video" controls></video>
+            <ul id="video-playlist"></ul>
+        </section>
+    </main>
+</body>
+<script src="../assets/js/cursor.js"></script>
+<script src="../assets/js/responsiveMenu.js"></script>
+<script src="../assets/js/videoGallery.js"></script>
+<script>
+    const videos = [
+        {
+            name: "cadastrar-livros.mp4",
+            title: "Gerenciar Livros",
+            description: "Visualizar, cadastrar, editar e excluir livros.",
+        },
+        {
+            name: "estatisticas.mp4",
+            title: "Estátisticas",
+            description: "Visualizar estátisticas de leitura.",
+        },
+        {
+            name: "gerenciar-tag-colecao.mp4",
+            title: "Gerenciar Tags e Coleções",
+            description: "Visualizar, cadastrar, editar e excluir tags e coleções",
+        },
+        {
+            name: "atualizar-perfil.mp4",
+            title: "Atualizar perfil",
+            description: "Atualizar perfil, modificando nome, foto e senha.",
+        },
+        {
+            name: "login.mp4",
+            title: "Login e Cadastro",
+            description: "Realizar cadastro de um perfil e login.",
+        },
+    ];
+
+    setupVideoGallery({ videoList: videos });
+</script>
+</html>

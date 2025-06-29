@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project developed as part of the Backend Development Project course, aiming to facilitate the management of personal readings by offering users an intuitive and functional platform to organize their book experience. Developed with .NET, Razor Pages, Entity Framework, and SQLite technologies.">
+    <title>Patrícia Rodrigues</title>
+    <link rel="stylesheet" href="../assets/css/style.css">    
+    <link rel="stylesheet" href="../assets/css/project.css">
+</head>
+<body>
+    <canvas id="sparkles"></canvas>
+    <main>
+        <nav>
+            <ul id="menu">
+                <li><a href="./index.html#about">About Me</a></li>
+                <li><a href="./index.html#technologies">Technologies</a></li>
+                <li><a class="active-section" href="./index.html#projects">Projects</a></li>
+                <li><a href="./index.html#contacts">Contact</a></li>
+            </ul>
+            <svg onClick="toggleMenu()" id="open-menu" class="visible" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+            <svg onClick="toggleMenu()" id="close-menu" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </nav>
+
+        <header>
+            <div class="stars"></div>
+            <div id="title-name">
+                <h1>Project: Littera<h1>
+            </div>
+        </header>
+
+        <section id="about">
+            <div class="col-1">
+                <div class="square-container">
+                    <img id="profile" src="../assets/images/logo-littera.png" alt="Logo Littera">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="info">
+                    <h3>About the project...</h3>
+                    <p>Littera is a system developed to facilitate the management of personal readings, offering users an intuitive and functional platform to organize their experience with books. Created as part of the Backend Development Project course, the system aims to combine practicality and control in a single application.</p>
+                    <p>The system allows users to register books with covers and detailed information, manage reading status (such as "Want to Read", "Reading", or "Read"), record start and end dates, make notes and ratings of up to 5 stars, view books in a showcase format, quickly search for titles, and track a history with reading statistics, such as total books read and annual progress.</p>
+                </div>
+            </div>
+        </section>
+        <section id="more-information2">
+            <div class="project-details">
+                <h4>Technologies Used</h4>
+                <ul class="tech-list">
+                    <li>
+                        <strong>.NET:</strong> The main framework of the application, used to structure the system and provide support for modern, high-performance web development.
+                    </li>
+                    <li>
+                        <strong>Razor Pages:</strong> Used to create dynamic pages in a simple and efficient way, combining server-side logic with the HTML interface.
+                    </li>
+                    <li>
+                        <strong>Entity Framework:</strong> An ORM (Object-Relational Mapper) that facilitated communication between the system and the database, allowing data to be handled through C# classes.
+                    </li>
+                    <li>
+                        <strong>SQLite:</strong> A lightweight and efficient database, ideal for local or small-scale applications. It was used to store all user information and their books.
+                    </li>
+                    <li>
+                        <strong>HTML5 and CSS3:</strong> Used to structure and style the user interface, ensuring intuitive navigation and a pleasant visual experience.
+                    </li>
+                </ul>
+                <a href="https://github.com/patricia-diasr/Littera" title="View Littera repository" target="_blank">View on GitHub</a>
+            </div>
+        </section>
+        <section id="gallery" class="black-background">
+            <div class="stars"></div>
+            <h3>See it in action</h3>
+            <video id="main-video" controls></video>
+            <ul id="video-playlist"></ul>
+        </section>
+    </main>
+</body>
+<script src="../assets/js/cursor.js"></script>
+<script src="../assets/js/responsiveMenu.js"></script>
+<script src="../assets/js/videoGallery.js"></script>
+<script>
+    const videos = [
+        {
+            name: "cadastrar-livros.mp4",
+            title: "Manage Books",
+            description: "View, add, edit, and delete books.",
+        },
+        {
+            name: "estatisticas.mp4",
+            title: "Statistics",
+            description: "View reading statistics.",
+        },
+        {
+            name: "gerenciar-tag-colecao.mp4",
+            title: "Manage Tags and Collections",
+            description: "View, add, edit, and delete tags and collections.",
+        },
+        {
+            name: "atualizar-perfil.mp4",
+            title: "Update Profile",
+            description: "Update profile information such as name, photo, and password.",
+        },
+        {
+            name: "login.mp4",
+            title: "Login and Registration",
+            description: "Register a new profile and log in.",
+        },
+    ];
+
+    setupVideoGallery({ videoList: videos });
+</script>
+</html>
