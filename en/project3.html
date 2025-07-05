@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project developed as part of the Block Project course in Front-end Development with Frameworks, aiming to enhance the movie-going experience for both customers and employees. Developed using React Native, Expo, Firebase, and TheMovieDB API.">
+    <title>Patrícia Rodrigues</title>
+    <link rel="stylesheet" href="../assets/css/style.css">    
+    <link rel="stylesheet" href="../assets/css/project.css">
+</head>
+<body>
+    <canvas id="sparkles"></canvas>
+    <main>
+        <nav>
+            <ul id="menu">
+                <li><a href="./index.html#about">About Me</a></li>
+                <li><a href="./index.html#technologies">Technologies</a></li>
+                <li><a class="active-section" href="./index.html#projects">Projects</a></li>
+                <li><a href="./index.html#contacts">Contact</a></li>
+            </ul>
+            <svg onClick="toggleMenu()" id="open-menu" class="visible" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+            <svg onClick="toggleMenu()" id="close-menu" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </nav>
+
+        <header>
+            <div class="stars"></div>
+            <div id="title-name">
+                <h1>Project: PipocaMania<h1>
+            </div>
+        </header>
+
+        <section id="about">
+            <div class="col-1">
+                <div class="square-container">
+                    <img id="profile" src="../assets/images/logo-pipocamania.png" alt="Logo PipocaMania">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="info">
+                    <h3>About the project...</h3>
+                    <p>PipocaMania is an app developed to enhance the movie-going experience for both customers and cinema staff. The goal is to offer a complete and modern platform that simplifies session management and provides the public with a practical and interactive way to explore movies currently showing. The project was created as part of the Block Project course in Front-end Development with Frameworks.</p>
+                    <p>For administrators, the app allows session registration, seat map viewing with the ability to block seats (for in-person sales), and ticket QR code scanning. For customers, PipocaMania offers features such as viewing movies currently playing and upcoming releases, session details, seat selection, ticket purchasing, movie rating, and the creation of a "want to watch" list.</p>
+                </div>
+            </div>
+        </section>
+        <section id="more-information2">
+            <div class="project-details">
+                <h4>Technologies Used</h4>
+                <ul class="tech-list">
+                    <li>
+                        <strong>React Native:</strong> Framework used for developing the mobile app, ensuring a native experience for both Android and iOS users.
+                    </li>
+                    <li>
+                        <strong>Expo:</strong> Platform that facilitated development, testing, and publishing of the app, as well as providing access to features like the camera for QR code scanning.
+                    </li>
+                    <li>
+                        <strong>Firebase:</strong> Used to store all application data, such as sessions, tickets, reviews, and interest lists.
+                    </li>
+                    <li>
+                        <strong>TheMovieDB API:</strong> API used to obtain detailed movie information, including synopsis, cast, trailers, and images.
+                    </li>
+                    <li>
+                        <strong>HTML5 and CSS3:</strong> Applied for styling the user interface, ensuring a modern look and smooth navigation within the app.
+                    </li>
+                </ul>
+                <a href="https://github.com/patricia-diasr/PipocaManiaApp" title="View PipocaMania repository" target="_blank">View on GitHub</a>
+            </div>
+        </section>
+        <section id="gallery" class="black-background">
+            <div class="stars"></div>
+            <h3>See it in action</h3>
+            <video id="main-video" controls></video>
+            <ul id="video-playlist"></ul>
+        </section>
+    </main>
+</body>
+<script src="../assets/js/cursor.js"></script>
+<script src="../assets/js/responsiveMenu.js"></script>
+<script src="../assets/js/videoGallery.js"></script>
+<script>
+    const videos = [
+        {
+            name: "pipocamania-funcionario.mp4",
+            title: "Employee Features",
+            description: "Register sessions, manage seats, validate tickets, and log in.",
+        },
+        {
+            name: "pipocamania-cliente.mp4",
+            title: "Customer Features",
+            description: "Browse movies, purchase tickets, rate, save to list, and access account.",
+        },
+    ];
+
+    setupVideoGallery({ videoList: videos });
+</script>
+</html>

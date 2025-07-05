@@ -493,10 +493,14 @@ p {
 }
 
 .slide:nth-child(3) .project-image {
-  background: url("../images/prudente-casa-pet.png");
+  background: url("../images/pipocamania.png");
 }
 
 .slide:nth-child(4) .project-image {
+  background: url("../images/prudente-casa-pet.png");
+}
+
+.slide:nth-child(5) .project-image {
   background: url("../images/calculadora.png");
 }
 
@@ -645,6 +649,7 @@ p {
 }
 
 /* Contact */
+
 #contacts {
   background: linear-gradient(135deg, #010e21 0%, #1a1a2e 100%),
     url("../images/galaxy.jpg");
@@ -747,7 +752,6 @@ button {
   background: var(--gradient-secondary);
   color: var(--white);
   font-weight: 600;
-  margin-bottom: 45px;
   text-transform: uppercase;
   letter-spacing: 3px;
   border: none;
